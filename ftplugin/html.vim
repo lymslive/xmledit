@@ -51,4 +51,6 @@ if !exists("*HtmlAttribCallback")
 endif
 
 " On to loading xml.vim
-runtime ftplugin/xml.vim
+" runtime ftplugin/xml.vim
+let s:thispath = fnamemodify(expand("<sfile>"), ":p:h")
+execute 'source ' . s:thispath . '/xml.vim'
